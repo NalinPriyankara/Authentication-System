@@ -99,7 +99,7 @@ export const logout = async (req, res) => {
 //send verification OTP to the user's email
 export const sendVerifyOtp = async (req, res) => {
     try {
-        const {userId} = req.body;
+        const {userId} = req;
         const user = await userModel.findById(userId);
 
         if(user.isAccountVerified){
