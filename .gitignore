@@ -1,5 +1,6 @@
 # Node modules
 Client/node_modules/
+Client/src/assets
 Server/node_modules/
 
 # Logs
