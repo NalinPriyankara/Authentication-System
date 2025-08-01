@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { assets } from '../assets/assets';
 import { useNavigate } from 'react-router-dom';
-import { AppContext } from '../context/AppContext';
+import { AppContent } from '../context/AppContext';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 
@@ -12,7 +12,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
 
     const navigate = useNavigate();
-    const {backendUrl, setIsLoggedin, getUserData} = useContext(AppContext);
+    const {backendUrl, setIsLoggedin, getUserData} = useContext(AppContent);
     const onSubmitHandler = async (e) => {
         try {
             e.preventDefault();
